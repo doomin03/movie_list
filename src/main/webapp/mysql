@@ -1,0 +1,15 @@
+drop table movie_reviews;
+
+CREATE TABLE movie_reviews (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    movieNm VARCHAR(255) NOT NULL,
+    comment TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+select * from movie_reviews;
+
+SHOW CREATE TABLE movie_reviews;
+
+ALTER TABLE movie_reviews CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
